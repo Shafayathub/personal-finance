@@ -6,9 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Finance</title>
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="font-sans">
+    <!-- name of this page -->
+    <header class="mt-8">
+        <h1 class="text-3xl font-extrabold text-emerald-400 text-center">Personal Finance</h1>
+    </header>
+
+    <!-- calculator section -->
+    <section class="m-8">
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-16">
+            <!-- image div -->
+            <div>
+                <img class="lg:h-2/3 lg:w-full" src="images/personal-finance-calculator.jpg"
+                    alt="personal-finance-calculator">
+            </div>
+            <!-- calculation div -->
+            <div class="bg-green-100 lg:h-2/3">
+                <h2 class="text-center">
+                    Income
+                </h2>
+            </div>
+        </div>
+    </section>
 
 </body>
 
