@@ -21,18 +21,64 @@
         <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-16">
             <!-- image div -->
             <div>
-                <img class="lg:h-2/3 lg:w-full" src="images/personal-finance-calculator.jpg"
+                <img class="h-full w-full" src="images/personal-finance-calculator.jpg"
                     alt="personal-finance-calculator">
             </div>
             <!-- calculation div -->
-            <div class="bg-green-100 lg:h-2/3">
-                <h2 class="text-center">
-                    Income
+            <div class="h-full bg-green-100 text-center">
+                <div>
+                    <h2 class="mt-8 font-extrabold text-xl">
+                        Income
+                    </h2>
+                    <h2 class="mt-4">Income:
+                        <span class="mx-4"><input type="number"></span>
+                    </h2>
+                </div>
+                <div>
+                    <h2 class="mt-8 font-extrabold text-xl">
+                        Expenses
+                    </h2>
+                    <h2 class="mt-4">Food:
+                        <span class="mx-4"><input type="number"></span>
+                    </h2>
+                    <h2 class="mt-4">Rent:
+                        <span class="mx-4"><input type="number"></span>
+                    </h2>
+                    <h2 class="mt-4">clothes:
+                        <span class="mx-4"><input type="number"></span>
+                    </h2>
+                </div>
+                <button class="mt-4 bg-green-500 rounded text-white px-6 py-2">
+                    Calculate
+                </button>
+                <h2 class="mt-4 text-xl font-bold">
+                    Total Expenses: <span>0</span>
+                </h2>
+                <h2 class="mt-4 text-xl font-bold">
+                    Balance: <span>0</span>
+                </h2>
+                <h2 class="mt-4">Savings:
+                    <span><input type="number"></span>
+                    <span>%</span>
+                    <button class="mt-4 bg-green-500 rounded text-white px-6 py-1">
+                        Save
+                    </button>
+                </h2>
+                <h2 class="mt-4 text-xl font-bold">
+                    Saving Amount: <span>0</span>
+                </h2>
+                <h2 class="mt-4 text-xl font-bold pb-2">
+                    Remaining Balance: <span>0</span>
                 </h2>
             </div>
         </div>
+        <div class="hidden">
+            <div id="error">
+                <p>Error</p>
+            </div>
+        </div>
     </section>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
