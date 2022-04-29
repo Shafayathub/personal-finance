@@ -8,6 +8,8 @@
     <title>Personal Finance</title>
     <!-- tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="font-sans">
@@ -31,7 +33,7 @@
                         Income
                     </h2>
                     <h2 class="mt-4">Income:
-                        <span class="mx-4"><input type="number"></span>
+                        <span class="mx-4"><input id="income" type="number"></span>
                     </h2>
                 </div>
                 <div>
@@ -39,23 +41,23 @@
                         Expenses
                     </h2>
                     <h2 class="mt-4">Food:
-                        <span class="mx-4"><input type="number"></span>
+                        <span class="mx-4"><input id="food" type="number"></span>
                     </h2>
                     <h2 class="mt-4">Rent:
-                        <span class="mx-4"><input type="number"></span>
+                        <span class="mx-4"><input id="rent" type="number"></span>
                     </h2>
                     <h2 class="mt-4">clothes:
-                        <span class="mx-4"><input type="number"></span>
+                        <span class="mx-4"><input id="clothes" type="number"></span>
                     </h2>
                 </div>
-                <button class="mt-4 bg-green-500 rounded text-white px-6 py-2">
+                <button id="calculate" class="mt-4 bg-green-500 rounded text-white px-6 py-2">
                     Calculate
                 </button>
                 <h2 class="mt-4 text-xl font-bold">
-                    Total Expenses: <span>0</span>
+                    Total Expenses: <span id="total-expense">0</span>
                 </h2>
                 <h2 class="mt-4 text-xl font-bold">
-                    Balance: <span>0</span>
+                    Balance: <span id="balance">0</span>
                 </h2>
                 <h2 class="mt-4">Savings:
                     <span><input type="number"></span>
@@ -65,17 +67,20 @@
                     </button>
                 </h2>
                 <h2 class="mt-4 text-xl font-bold">
-                    Saving Amount: <span>0</span>
+                    Saving Amount: <span id="saving-amount">0</span>
                 </h2>
                 <h2 class="mt-4 text-xl font-bold pb-2">
-                    Remaining Balance: <span>0</span>
+                    Remaining Balance: <span id="remaining-balance">0</span>
                 </h2>
             </div>
         </div>
         <!-- Hidden message -->
-        <div class="hidden">
-            <div id="error">
-                <p>Error</p>
+        <div class="mt-5 text-center text-xl font-bold">
+            <div id="input-error" class="mt-5 text-center text-xl font-bold bg-red-100">
+                <p>Try something real!!!</p>
+            </div>
+            <div id="balance-error" class="mt-5 text-center text-xl font-bold bg-red-100">
+                <p>Insufficient Balance</p>
             </div>
         </div>
     </section>
