@@ -20,6 +20,15 @@
 
     <!-- calculator section -->
     <section class="m-8">
+        <!-- Hidden message -->
+        <div class="mt-3 text-center text-xl font-bold">
+            <div id="input-error" class="text-center text-xl font-bold text-white bg-red-700">
+                <p>Try positive inputs!!!</p>
+            </div>
+            <div id="balance-error" class="text-center text-xl font-bold text-white bg-red-700">
+                <p>Insufficient Balance!!!</p>
+            </div>
+        </div>
         <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-16">
             <!-- image div -->
             <div>
@@ -60,9 +69,9 @@
                     Balance: <span id="balance">0</span>
                 </h2>
                 <h2 class="mt-4">Savings:
-                    <span><input type="number"></span>
+                    <span><input id="savings" type="number"></span>
                     <span>%</span>
-                    <button class="mt-4 bg-green-500 rounded text-white px-6 py-1">
+                    <button id="save" class="mt-4 bg-green-500 rounded text-white px-6 py-1">
                         Save
                     </button>
                 </h2>
@@ -75,12 +84,12 @@
             </div>
         </div>
         <!-- Hidden message -->
-        <div class="mt-5 text-center text-xl font-bold">
-            <div id="input-error" class="mt-5 text-center text-xl font-bold bg-red-100">
-                <p>Try something real!!!</p>
+        <div class="mt-3 text-center text-xl font-bold">
+            <div id="input-error-2" class="text-center text-xl font-bold text-white bg-red-700">
+                <p>Try positive inputs!!!</p>
             </div>
-            <div id="balance-error" class="mt-5 text-center text-xl font-bold bg-red-100">
-                <p>Insufficient Balance</p>
+            <div id="balance-error-2" class="text-center text-xl font-bold text-white bg-red-700">
+                <p>Insufficient Balance!!!</p>
             </div>
         </div>
     </section>
